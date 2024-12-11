@@ -51,57 +51,7 @@ const CustomerRegistrationForm = () => {
 
   return (
     <div>
-      <Form
-        layout="vertical"
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        autoComplete="off"
-        className="w-full md:w-[500px] px-5"
-      >
-        <Form.Item<FieldType>
-          label="Register as a"
-          name="role"
-          rules={[{ required: true, message: "Please input your email!" }]}
-        >
-          <Select
-            showSearch
-            style={{ width: "100%" }}
-            placeholder="Search to Select"
-            optionFilterProp="label"
-            filterSort={(optionA, optionB) =>
-              (optionA?.label ?? "")
-                .toLowerCase()
-                .localeCompare((optionB?.label ?? "").toLowerCase())
-            }
-            options={[
-              {
-                value: "VENDOR",
-                label: "VENDOR",
-              },
-              {
-                value: "COSTOMER",
-                label: "COSTOMER",
-              },
-            ]}
-          />
-        </Form.Item>
-        <Form.Item
-          name="avatar"
-          label="User Avatar"
-          valuePropName="file"
-          getValueFromEvent={normFile}
-        >
-          <Upload name="avatar" listType="picture">
-            <Button icon={<UploadOutlined />}>Click to upload</Button>
-          </Upload>
-        </Form.Item>
-
-        <Form.Item label={null} className="text-center">
-          <Button type="primary" htmlType="submit" className="w-40">
-            Submit
-          </Button>
-        </Form.Item>
-      </Form>
+      customer 
     </div>
   );
 };
