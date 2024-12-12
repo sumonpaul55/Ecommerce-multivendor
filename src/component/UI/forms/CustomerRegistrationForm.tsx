@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Button, Form, FormProps, Select, Upload } from "antd";
+import {  FormProps,  } from "antd";
 import { useNavigate } from "react-router";
-import { UploadOutlined } from "@ant-design/icons";
 import { toast } from "sonner";
 
 type FieldType = {

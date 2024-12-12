@@ -19,10 +19,9 @@ export default function Register() {
 
  
 const [selectType, setSelectType]=useState("")
-console.log(selectType)
   return (
-    <div className="flex justify-center items-center min-h-[calc(100vh-100px)] my-5">
-      <div className="border shadow-xl p-6">
+    <div className="flex border shadow-xl p-6 justify-center min-h-[calc(100vh-100px)] my-5 w-[400px] mx-auto">
+      <div className="w-full">
         <p className="text-2xl text-center my-5 font-bold">Registration Form</p>
         <Form.Item<FieldType>
           label="Register as a"
@@ -30,8 +29,7 @@ console.log(selectType)
           rules={[{ required: true, message: "Please input your email!" }]}>
           <Select
           onChange={(value)=> setSelectType(value)}
-            style={{ width: "100%" }}
-            placeholder="Search to Select"
+         placeholder="Search to Select"
             optionFilterProp="label"
             filterSort={(optionA, optionB) =>
               (optionA?.label ?? "")

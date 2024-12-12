@@ -14,7 +14,7 @@ import { tagTypesList } from "../tagTypes";
 
 const baseQuery = fetchBaseQuery({
   // baseUrl: "",
-  baseUrl: "http://localhost:5000/api/v1",
+  baseUrl: "https://ecommersbackend.vercel.app/api/v1",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;

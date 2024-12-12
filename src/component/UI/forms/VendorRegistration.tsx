@@ -9,14 +9,14 @@ export const VendorRegistration = () => {
     console.log('Form Values:', values);
   };
   return (
-    <div style={{ maxWidth: 600, margin: 'auto', padding: '20px' }}>
+    <div>
     <Form
       form={form}
       name="registration"
       onFinish={handleSubmit}
       labelCol={{ span: 6 }}
       wrapperCol={{ span: 18 }}
-      layout="horizontal"
+      layout="vertical"
     >
       {/* Name Field */}
       <Form.Item
